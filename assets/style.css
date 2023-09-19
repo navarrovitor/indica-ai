@@ -1,0 +1,43 @@
+:root {
+  --purple: #54426b;
+  --off-white: #e9f1f7;
+}
+
+body {
+    background-color: var(--off-white);
+    color: var(--off-white);
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+.navbar {
+  width: 100%;
+  top: 0;
+  display: flex;
+  border-radius: 0px 0px 20px 20px;
+  background: var(--purple);
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.navbar * {
+    margin-left: 25px;
+}
+
+section {
+    background-color: var(--purple);
+    display: flex;
+    height: 100%;
+}
+
+.footer {
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    border-radius: 20px 20px 0px 0px;
+    background: var(--purple);
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.footer * {
+    margin-left: 25px;
+}
