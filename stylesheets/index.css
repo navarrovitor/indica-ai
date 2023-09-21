@@ -1,39 +1,13 @@
-:root {
-  --purple: #54426b;
-  --off-white: #e9f1f7;
-}
+@import "base.css";
 
 body {
   background-color: var(--purple);
   color: var(--off-white);
-  font-family: "Ubuntu", sans-serif;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-header,
-footer {
-  width: 100%;
-  display: flex;
-  font-family: "Montserrat Alternates", sans-serif;
-}
-
-header {
-  border-radius: 0px 0px 20px 20px;
-  background: var(--purple);
-}
-
-header *,
-footer * {
-  margin-left: 25px;
 }
 
 main {
   display: flex;
   justify-content: space-between;
-  flex-grow: 1;
 }
 
 main * {
@@ -49,6 +23,8 @@ main * {
 }
 
 .left h2 {
+  max-width: 80%;
+  width: fit-content;
   margin: 0;
   padding: 0;
   margin-bottom: 5px;
@@ -95,13 +71,15 @@ input {
   background-color: #f9f9f9;
 }
 
-#signin, #signup {
+#signin,
+#signup {
   width: 90%;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
   font-weight: 600;
+  text-decoration: none;
 }
 
 #signin {
@@ -135,26 +113,7 @@ input {
   margin: 0 10px;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  align-items: center;
-  border-radius: 20px 20px 0px 0px;
-  background: var(--purple);
-}
-
 @media (max-width: 400px) {
-  header,
-  footer {
-    font-size: small;
-  }
-  footer * {
-    margin-left: auto;
-  }
-  main {
-    flex-direction: column;
-    /* justify-content: center; */
-  }
   .left,
   .right {
     width: 100%;
