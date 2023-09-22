@@ -1,0 +1,36 @@
+.card_jobs {
+  border: 1px solid grey;
+  border-radius: 4px;
+  width: 29%;
+}
+
+.card_jobs img {
+  width: 100%;
+}
+
+.title_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.jobs_circle {
+  background-color: rgba(25, 134, 84, 0.5);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+}
+
+.text_card {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+.description_card {
+  color: rgba(33, 37, 41, 1);
+}
+.footer_card_text {
+  margin-left: 16px;
+  color: rgba(108, 117, 125, 1);
+}
