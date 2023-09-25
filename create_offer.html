@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/stylesheets/create_offer.css" />
+    <title>Indica Aí</title>
+  </head>
+  <body>
+    <header>
+      <img src="/assets/logo.svg" alt="Logo Indica Aí" />
+      <h1>Indica Aí</h1>
+    </header>
+    <main>
+      <h1>CADASTRE UMA NOVA VAGA</h1>
+      <form action="submit">
+        <div class="form-group">
+          <label for="title">Título da Vaga</label>
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Desenvolvedor .Net"
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">Descrição da Vaga</label>
+          <textarea
+            name="description"
+            id="description"
+            placeholder="Necessário graduação completa em CC"
+            rows="2"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="level">Nível da Vaga</label>
+          <div id="level">
+            <div class="btn-level" id="jr">Júnior</div>
+            <div class="btn-level" id="pl">Pleno</div>
+            <div class="btn-level" id="sr">Sênior</div>
+          </div>
+          <div id="non-specific">
+            <div class="btn-non-specific">Estágio</div>
+            <div class="btn-non-specific">Não se aplica</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="community">Essa vaga é para alguma comunidade?</label>
+          <select name="community" id="select">
+            <option value="none">Nenhuma comunidade específica</option>
+            <option value="community_one">
+              Turma 08N - Ciência da Computação
+            </option>
+            <option value="community_two">Pessoal de tech do colégio</option>
+          </select>
+        </div>
+        <a id="register">Cadastrar Vaga</a>
+      </form>
+    </main>
+    <footer>
+      <h3>&copy; 2023 Indica aí.</h3>
+      <p>Termos de uso</p>
+      <p>Privacidade</p>
+      <p>Cookies</p>
+    </footer>
+  </body>
+</html>
