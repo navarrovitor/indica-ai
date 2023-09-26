@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="../stylesheets/feed.css" />
     <title>Feed</title>
   </head>
@@ -12,107 +18,91 @@
       <img src="/assets/logo.svg" alt="Logo Indica Aí" />
       <h1>Indica Aí</h1>
     </header>
-    <p class="page_title">Home / Feed</p>
+
     <main>
+      <!-- <a href="#">Home</a> &gt; -->
+      <div id="breadcrumbs">
+        <a href="#">Home</a>
+        <span>Feed</span>
+      </div>
       <div class="wrapper">
-        <div class="card_jobs">
-          <a href="communities.html">
-            <img src="/assets/images/img1.png" alt="" />
-            <div class="text_card">
-              <div class="title_card">
-                <p><b>Desenvolvedor Back-End</b></p>
-                <div>
-                  <p class="jobs_circle"><b>JR</b></p>
-                </div>
-              </div>
-              <p class="descripition_card">
-                Vaga para desenvolvimento web e sistemas, com conhecimento em
-                Python, Java ou Ruby. Formação em tecnologia é um diferencial.
-              </p>
-            </div>
-            <p class="footer_card_text">Last updated 3 mins ago</p>
-          </a>
-        </div>
-        <div class="card_jobs">
-          <img src="../assets/img1.png" alt="" />
-          <div class="text_card">
-            <div class="title_card">
-              <p><b>Desenvolvedor Back-End</b></p>
-              <div>
-                <p class="jobs_circle"><b>JR</b></p>
-              </div>
-            </div>
-            <p class="descripition_card">
-              Vaga para desenvolvimento web e sistemas, com conhecimento em
-              Python, Java ou Ruby. Formação em tecnologia é um diferencial.
-            </p>
+        <a class="card" href="communities.html">
+          <img src="/assets/images/feed1.png" />
+          <div class="card-title">
+            <p class="card-position"><b>Desenvolvedor Back-End</b></p>
+            <p class="card-level jr"><b>Jr</b></p>
           </div>
-          <p class="footer_card_text">Last updated 3 mins ago</p>
-        </div>
-        <div class="card_jobs">
-          <img src="../assets/img1.png" alt="" />
-          <div class="text_card">
-            <div class="title_card">
-              <p><b>Desenvolvedor Back-End</b></p>
-              <div>
-                <p class="jobs_circle"><b>JR</b></p>
-              </div>
-            </div>
-            <p class="descripition_card">
-              Vaga para desenvolvimento web e sistemas, com conhecimento em
-              Python, Java ou Ruby. Formação em tecnologia é um diferencial.
-            </p>
+          <p class="card-description">
+            Vaga para desenvolvimento web e sistemas, com conhecimento em
+            Python, Java ou Ruby. Formação em tecnologia é um diferencial.
+          </p>
+          <p class="card-footer">Last updated 3 mins ago</p>
+        </a>
+        <a class="card" href="communities.html">
+          <img src="assets/images/feed2.png" />
+          <div class="card-title">
+            <p class="card-position"><b>Desenvolvedor Back-End</b></p>
+            <p class="card-level pl"><b>Pl</b></p>
           </div>
-          <p class="footer_card_text">Last updated 3 mins ago</p>
-        </div>
-        <div class="card_jobs">
-          <img src="../assets/img1.png" alt="" />
-          <div class="text_card">
-            <div class="title_card">
-              <p><b>Desenvolvedor Back-End</b></p>
-              <div>
-                <p class="jobs_circle"><b>JR</b></p>
-              </div>
-            </div>
-            <p class="descripition_card">
-              Vaga para desenvolvimento web e sistemas, com conhecimento em
-              Python, Java ou Ruby. Formação em tecnologia é um diferencial.
-            </p>
+          <p class="card-description">
+            Possuir sólida experiência em desenvolvimento front-end, é
+            especialista em HTML, CSS, JavaScript e tem conhecimento React ou
+            Angular.
+          </p>
+          <p class="card-footer">Last updated 15 mins ago</p>
+        </a>
+        <a class="card" href="communities.html">
+          <img src="assets/images/feed3.png" />
+          <div class="card-title">
+            <p class="card-position"><b>Desenvolvedor Full-stack</b></p>
+            <p class="card-level sr"><b>Sr</b></p>
           </div>
-          <p class="footer_card_text">Last updated 3 mins ago</p>
-        </div>
-        <div class="card_jobs">
-          <img src="../assets/img1.png" alt="" />
-          <div class="text_card">
-            <div class="title_card">
-              <p><b>Desenvolvedor Back-End</b></p>
-              <div>
-                <p class="jobs_circle"><b>JR</b></p>
-              </div>
-            </div>
-            <p class="descripition_card">
-              Vaga para desenvolvimento web e sistemas, com conhecimento em
-              Python, Java ou Ruby. Formação em tecnologia é um diferencial.
-            </p>
+          <p class="card-description">
+            Possuir ampla experiência em desenvolvimento web, tanto no front-end
+            quanto no back-end. Além de liderar e orientar outros
+            desenvolvedores.
+          </p>
+          <p class="card-footer">Last updated 40 mins ago</p>
+        </a>
+        <a class="card" href="communities.html">
+          <img src="assets/images/feed4.png" />
+          <div class="card-title">
+            <p class="card-position"><b>Cientista de Dados</b></p>
+            <p class="card-level pl"><b>Pl</b></p>
           </div>
-          <p class="footer_card_text">Last updated 3 mins ago</p>
-        </div>
-        <div class="card_jobs">
-          <img src="../assets/img1.png" alt="" />
-          <div class="text_card">
-            <div class="title_card">
-              <p><b>Desenvolvedor Back-End</b></p>
-              <div>
-                <p class="jobs_circle"><b>JR</b></p>
-              </div>
-            </div>
-            <p class="descripition_card">
-              Vaga para desenvolvimento web e sistemas, com conhecimento em
-              Python, Java ou Ruby. Formação em tecnologia é um diferencial.
-            </p>
+          <p class="card-description">
+            Analise dados complexos, desenvolva modelos preditivos, e otimize
+            estratégias de negócios. Requer habilidades em Python, machine
+            learning e estatísticas
+          </p>
+          <p class="card-footer">Last updated 5 days ago</p>
+        </a>
+        <a class="card" href="communities.html">
+          <img src="assets/images/feed5.png" />
+          <div class="card-title">
+            <p class="card-position"><b>Tech Lead</b></p>
+            <p class="card-level sr"><b>Sr</b></p>
           </div>
-          <p class="footer_card_text">Last updated 3 mins ago</p>
-        </div>
+          <p class="card-description">
+            Lidere equipes de desenvolvimento, defina arquiteturas tecnológicas,
+            e promova inovação. Experiência em liderança, arquitetura de
+            software e habilidades de comunicação essenciais
+          </p>
+          <p class="card-footer">Last updated 1 month ago</p>
+        </a>
+        <a class="card" href="communities.html">
+          <img src="assets/images/feed6.png" />
+          <div class="card-title">
+            <p class="card-position"><b>Project Manager</b></p>
+            <p class="card-level sr"><b>Sr</b></p>
+          </div>
+          <p class="card-description">
+            Supervisione projetos, coordene equipes e garanta entregas dentro do
+            prazo e orçamento. Habilidades em gestão de projetos, comunicação e
+            resolução de problemas são cruciais
+          </p>
+          <p class="card-footer">Last updated 1 year ago</p>
+        </a>
       </div>
     </main>
 
