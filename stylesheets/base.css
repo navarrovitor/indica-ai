@@ -21,20 +21,33 @@ footer {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: small;
   height: fit-content;
-}
-
-header img {
-  width: 50px;
+  align-items: center;
 }
 
 header {
   border-radius: 0px 0px 20px 20px;
   background: var(--purple);
+  align-items: center;
+  justify-content: space-between;
 }
 
 header *,
 footer * {
-  margin-left: 25px;
+  margin-left: 20px;
+}
+
+header .left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .right{
+  margin-right: 40px;
+}
+
+header img {
+  width: 50px;
 }
 
 footer {
@@ -47,6 +60,8 @@ footer {
 
 main {
   flex-grow: 1;
+  margin: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .breadcrumbs {
@@ -68,6 +83,90 @@ main {
 .breadcrumbs span::before {
   content: ">";
   margin: 0 5px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: calc(33.33% - 50px);
+  max-height: 400px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  max-height: 50%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-title,
+.card-description,
+.card-footer {
+  margin: 0 35px;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-position {
+  font-size: large;
+}
+
+.card-level {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+}
+
+.jr {
+  background-color: rgba(25, 134, 84, 0.5);
+}
+
+.pl {
+  background-color: rgba(237, 241, 24, 0.5);
+}
+
+.sr {
+  background-color: rgba(241, 24, 24, 0.5);
+}
+
+.card-description,
+.card-footer {
+  margin-bottom: 20px;
+}
+
+.card-footer {
+  color: #6c757d;
+}
+
+.community-logo {
+  width: 40px;
+  margin-left: 16px;
 }
 
 @media (max-width: 400px) {

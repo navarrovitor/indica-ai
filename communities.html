@@ -3,63 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../stylesheets/communities.css"
-    />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/base.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
       rel="stylesheet"
     />
-    <title>Feed</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <title>Communities</title>
   </head>
 
   <body>
     <header>
-      <img src="/assets/logo.svg" alt="Logo Indica Aí" />
-      <h1>Indica Aí</h1>
-      <a href="communities.html"><img src="/assets/persons.svg" alt="Logo comunidade"></a>
+      <div class="left">
+        <a href="feed.html">
+          <img src="/assets/logo.svg" alt="Logo Indica Aí" />
+        </a>
+        <h1>Indica Aí</h1>
+      </div>
+      <div class="right">
+        <a href="">
+          <img src="/assets/persons.svg" alt="Logo comunidade" />
+        </a>
+      </div>
     </header>
-
-    <div id="breadcrumbs">
-      <a href="#">Home</a>
-      <span>Comunities</span>
-    </div>
-    <div class="wrapper">
-      <a class="card" href="community.html">
-        <img src="/assets/images/hsimage.jpeg" />
-        <div class="card-title">
-          <p class="card-position"><b>Turma 08N - Ciência da Computação</b></p>
-        </div>
-        <p class="card-description">
-          Vagas para os guerreiros que sobreviveram os 4 anos do curso de
-          ciência da computação no Mackenzie. Um grupo com os mais crânios.
-        </p>
-        <p class="card-footer">46 vagas</p>
-      </a>
-      <a class="card" href="community.html">
-        <img src="/assets/images/promoimage.jpeg" />
-        <div class="card-title">
-          <p class="card-position"><b>Pessoal de Tech do Colégio</b></p>
-        </div>
-        <p class="card-description">
-          Irmãos até o fim! Não é só porque o ensino médio acabou que vamos
-          deixar de ajudarmos uns aos outros. Para quem viveu o colégio, buscar
-          vaga é moleza.
-        </p>
-        <p class="card-footer">15 vagas</p>
-      </a>
-      
-  </main>
-
-  <footer>
-    <h3>&copy; 2023 Indica aí.</h3>
-    <p>Termos de uso</p>
-    <p>Privacidade</p>
-    <p>Cookies</p>
-  </footer>
+    <main>
+      <div class="breadcrumbs">
+        <a href="feed.html">Feed</a>
+        <span>Communities</span>
+      </div>
+      <h1>Suas comunidades</h1>
+      <div class="wrapper">
+        <a class="card" href="community.html">
+          <img src="/assets/images/hsimage.jpeg" />
+          <div class="card-title">
+            <p class="card-position">
+              <b>Turma 08N - Ciência da Computação</b>
+            </p>
+          </div>
+          <p class="card-description">
+            Vagas para os guerreiros que sobreviveram os 4 anos do curso de
+            ciência da computação no Mackenzie. Um grupo com os mais crânios.
+          </p>
+          <p class="card-footer">46 vagas</p>
+        </a>
+        <a class="card" href="community.html">
+          <img src="/assets/images/promoimage.jpeg" />
+          <div class="card-title">
+            <p class="card-position">
+              <b>Pessoal de Tech do Colégio</b>
+            </p>
+          </div>
+          <p class="card-description">
+            Irmãos até o fim! Não é só porque o ensino médio acabou que vamos
+            deixar de ajudarmos uns aos outros. Para quem viveu o colégio,
+            buscar vaga é moleza.
+          </p>
+          <p class="card-footer">15 vagas</p>
+        </a>
+      </div>
+    </main>
+    <footer>
+      <h3>&copy; 2023 Indica aí.</h3>
+      <p>Termos de uso</p>
+      <p>Privacidade</p>
+      <p>Cookies</p>
+    </footer>
   </body>
 </html>

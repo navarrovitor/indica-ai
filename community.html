@@ -6,6 +6,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&family=Ubuntu&display=swap"
       rel="stylesheet"
     />
@@ -19,25 +23,32 @@
 
   <body>
     <header>
-      <img src="/assets/logo.svg" alt="Logo Indica Aí" />
-      <h1>Indica Aí</h1>
-      <a href="communities.html"
-        ><img src="/assets/persons.svg" alt="Logo comunidade"
-      /></a>
+      <div class="left">
+        <a href="feed.html">
+          <img src="/assets/logo.svg" alt="Logo Indica Aí" />
+        </a>
+        <h1>Indica Aí</h1>
+      </div>
+      <div class="right">
+        <a href="communities.html">
+          <img src="/assets/persons.svg" alt="Logo comunidade" />
+        </a>
+      </div>
     </header>
 
     <main>
-      <div id="breadcrumbs">
-        <a href="#">Home</a>
+      <div class="breadcrumbs">
+        <a href="feed.html">Feed</a> &gt;
+        <a href="communities.html">Communities</a>
         <span>Turma 08N - Ciência da Computação</span>
       </div>
-      <div class="banner">
-        <img id="mackenzielogo" src="/assets/images/img2.png" />
+      <div class="community-banner">
+        <img class="community-logo" src="/assets/images/community1.png" />
         <h2>Turma 08N - Ciência da Computação</h2>
-        <img src="/assets//images/promoimage.jpeg" />
+        <img id="community-img" src="/assets//images/promoimage.jpeg" />
       </div>
       <div class="wrapper">
-        <a class="card" href="jobopportunity.html">
+        <a class="card" href="job_opportunity.html">
           <img src="/assets/images/feed1.png" />
           <div class="card-title">
             <p class="card-position"><b>Desenvolvedor Back-End</b></p>
@@ -49,7 +60,7 @@
           </p>
           <p class="card-footer">Last updated 3 mins ago</p>
         </a>
-        <a class="card" href="jobopportunity.html">
+        <a class="card" href="job_opportunity.html">
           <img src="assets/images/feed2.png" />
           <div class="card-title">
             <p class="card-position"><b>Desenvolvedor Back-End</b></p>
@@ -62,7 +73,7 @@
           </p>
           <p class="card-footer">Last updated 15 mins ago</p>
         </a>
-        <a class="card" href="jobopportunity.html">
+        <a class="card" href="job_opportunity.html">
           <img src="assets/images/feed3.png" />
           <div class="card-title">
             <p class="card-position"><b>Desenvolvedor Full-stack</b></p>
@@ -75,7 +86,7 @@
           </p>
           <p class="card-footer">Last updated 40 mins ago</p>
         </a>
-        <a class="card" href="jobopportunity.html">
+        <a class="card" href="job_opportunity.html">
           <img src="assets/images/feed4.png" />
           <div class="card-title">
             <p class="card-position"><b>Cientista de Dados</b></p>
@@ -88,7 +99,7 @@
           </p>
           <p class="card-footer">Last updated 5 days ago</p>
         </a>
-        <a class="card" href="jobopportunity.html">
+        <a class="card" href="job_opportunity.html">
           <img src="assets/images/feed5.png" />
           <div class="card-title">
             <p class="card-position"><b>Tech Lead</b></p>
@@ -101,7 +112,7 @@
           </p>
           <p class="card-footer">Last updated 1 month ago</p>
         </a>
-        <a class="card" href="jobopportunity.html">
+        <a class="card" href="job_opportunity.html">
           <img src="assets/images/feed6.png" />
           <div class="card-title">
             <p class="card-position"><b>Project Manager</b></p>

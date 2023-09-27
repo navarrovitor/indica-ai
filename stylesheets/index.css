@@ -1,5 +1,9 @@
 @import "base.css";
 
+header {
+  margin-top: 10px;
+}
+
 body {
   background-color: var(--purple);
   color: var(--off-white);
