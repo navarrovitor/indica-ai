@@ -19,7 +19,12 @@ footer {
   width: 100%;
   display: flex;
   font-family: "Montserrat Alternates", sans-serif;
+  font-size: small;
   height: fit-content;
+}
+
+header img {
+  width: 50px;
 }
 
 header {
@@ -37,10 +42,32 @@ footer {
   align-items: center;
   border-radius: 20px 20px 0px 0px;
   background: var(--purple);
+  position: sticky;
 }
 
 main {
   flex-grow: 1;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #999;
+}
+
+.breadcrumbs a {
+  color: #999;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumbs a:hover {
+  color: #333;
+}
+
+.breadcrumbs span::before {
+  content: ">";
+  margin: 0 5px;
 }
 
 @media (max-width: 400px) {

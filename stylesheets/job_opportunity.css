@@ -1,0 +1,80 @@
+@import "base.css";
+
+main {
+  margin: auto 50px;
+  /* line-height: 24px; */
+  font-family: "Montserrat", sans-serif;
+}
+
+main h1 {
+  color: var(--purple);
+  font-family: Poppins;
+  font-size: 32px;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#name {
+  display: flex;
+  align-items: center;
+}
+
+#communities {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-left: 24px;
+}
+
+#communities p {
+  color: rgba(84, 66, 107, 0.5);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.community-logo {
+  width: 40px;
+  margin-left: 16px;
+}
+
+#description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#description-container h2 {
+  color: #fff;
+  background-color: var(--purple);
+  margin: 10px 0;
+  font-size: medium;
+  padding: 10px;
+  border: 1px solid var(--purple);
+  border-radius: 20px;
+}
+
+#description-text {
+  margin: 0 20px;
+}
+
+.characteristics {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.characteristics * {
+  width: 33.33%;
+  margin: 5px auto;
+  text-align: center;
+}
