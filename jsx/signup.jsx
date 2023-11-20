@@ -1,7 +1,5 @@
-// Nome do arquivo: SignupPage.jsx
-
 import React from "react";
-import "./styles/signup.css"; // Certifique-se de ter o arquivo CSS no caminho correto
+import "./styles/signup.css";
 
 const SignupPage = () => {
   return (
